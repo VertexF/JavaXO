@@ -96,62 +96,53 @@ public class Board {
         /**
          * Return win condition flag: 0 means No winner, 1 means X is the winner, 2 means O is the winner.
          */
-        int winningFlag = 0;
         
         if(buttonText1[0].equals("X") && buttonText1[1].equals("X") && buttonText1[2].equals("X"))
         { 
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         if(buttonText1[3].equals("X") && buttonText1[4].equals("X") && buttonText1[5].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
                 
         if(buttonText1[6].equals("X") && buttonText1[7].equals("X") && buttonText1[8].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         if(buttonText1[0].equals("X") && buttonText1[3].equals("X") && buttonText1[6].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         if(buttonText1[1].equals("X") && buttonText1[4].equals("X") && buttonText1[7].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         if(buttonText1[2].equals("X") && buttonText1[5].equals("X") && buttonText1[8].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         if(buttonText1[0].equals("X") && buttonText1[4].equals("X") && buttonText1[8].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         if(buttonText1[2].equals("X") && buttonText1[4].equals("X") && buttonText1[6].equals("X"))
         {
-            winningFlag = 1;
             XCount++;
-            return winningFlag;
+            return 1;
         }
         
         /**
@@ -159,60 +150,52 @@ public class Board {
          */
         if(buttonText1[0].equals("O") && buttonText1[1].equals("O") && buttonText1[2].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
         if(buttonText1[3].equals("O") && buttonText1[4].equals("O") && buttonText1[5].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
                 
         if(buttonText1[6].equals("O") && buttonText1[7].equals("O") && buttonText1[8].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
         if(buttonText1[0].equals("O") && buttonText1[3].equals("O") && buttonText1[6].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
         if(buttonText1[1].equals("O") && buttonText1[4].equals("O") && buttonText1[7].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
         if(buttonText1[2].equals("O") && buttonText1[5].equals("O") && buttonText1[8].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
         if(buttonText1[0].equals("O") && buttonText1[4].equals("O") && buttonText1[8].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
         if(buttonText1[2].equals("O") && buttonText1[4].equals("O") && buttonText1[6].equals("O"))
         {
-            winningFlag = 2;
             OCount++;
-            return winningFlag;
+            return 2;
         }
         
-        return winningFlag;
+        return 0;
     }
 }
