@@ -66,7 +66,6 @@ public class MainFrame extends javax.swing.JFrame implements ActionListener{
         //</editor-fold>
         //</editor-fold>
 
-
         MainFrame frame = new MainFrame();
         frame.addWindowListener( new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
